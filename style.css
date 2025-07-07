@@ -1,0 +1,62 @@
+body {
+  margin: 0;
+  height: 100vh;
+  background: linear-gradient(135deg, #e52a91 0%, #9e67dd 55%, #c90fda 100%), 
+              linear-gradient(to right, #7047cf 0%, #6db1e2 100%);
+  background-blend-mode: screen;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+}
+
+.container {
+  text-align: center;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 20px;
+  padding: 40px;
+  backdrop-filter: blur(10px);
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: #d6336c;
+}
+
+button {
+  margin-top: 20px;
+  padding: 12px 24px;
+  border: none;
+  background: #d6336c;
+  color: white;
+  font-size: 1.2rem;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background: #ad1457;
+}
+
+#wishNote {
+  margin-top: 30px;
+  font-size: 1.5rem;
+  color: #6a1b9a;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.6s ease;
+}
+
+#wishNote.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+}
